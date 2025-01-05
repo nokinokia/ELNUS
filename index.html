@@ -294,6 +294,7 @@
         <a href="#" id="aboutLink"><i class="fas fa-info-circle"></i> </a>
         <a href="#" id="servicesLink"><i class="fas fa-thumbtack"></i> </a>
         <a href="#" id="contactLink"><i class="fas fa-comment-dollar"></i> </a>
+        <a href="chat.html" id="homeLink"><i class="fa fa-commenting"></i> </a>
     </div>
 
     <!-- Box Container for Displaying Content -->
@@ -341,14 +342,13 @@
         <a href="https://pump.fun/board"><img src="https://ailive.co/src/img/pumpfun.png" width="30px"></a>
         <a href="https://dexscreener.com/solana"><img src="https://ailive.co/src/img/dex-screener.svg" class="white-icon" width="30px"></a>
     </div>
-
     <style>
         .footer img {
             filter: invert(10%) brightness(10000%) contrast(9000%);
         }
     </style>
-
-
+    
+    
     <script>
         // Function to switch between content sections
         function showContent(sectionId) {
@@ -357,35 +357,35 @@
             sections.forEach(section => {
                 section.classList.remove('active');
             });
-
+    
             // Show the selected section
             const selectedSection = document.getElementById(sectionId);
             if (selectedSection) {
                 selectedSection.classList.add('active');
             }
         }
-
+    
         // Add event listeners to the navbar links
-        document.getElementById('homeLink').addEventListener('click', function (event) {
+        document.getElementById('homeLink').addEventListener('click', function(event) {
             event.preventDefault();
             showContent('homeContent');
         });
-
-        document.getElementById('aboutLink').addEventListener('click', function (event) {
+    
+        document.getElementById('aboutLink').addEventListener('click', function(event) {
             event.preventDefault();
             showContent('aboutContent');
         });
-
-        document.getElementById('servicesLink').addEventListener('click', function (event) {
+    
+        document.getElementById('servicesLink').addEventListener('click', function(event) {
             event.preventDefault();
             showContent('servicesContent');
         });
-
-        document.getElementById('contactLink').addEventListener('click', function (event) {
+    
+        document.getElementById('contactLink').addEventListener('click', function(event) {
             event.preventDefault();
             showContent('contactContent');
         });
-
+    
         // Function to copy the text (button functionality)
         function copyText() {
             const textToCopy = "Hackathon Decentralized Agent Networks!";
@@ -397,11 +397,10 @@
                     console.error("Error copying text: ", err);
                 });
         }
-
+    
         // Initially show the home content
         showContent('homeContent');
     </script>
-
+    
 </body>
-
 </html>
